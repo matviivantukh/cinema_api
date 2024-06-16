@@ -1,0 +1,35 @@
+.sidebar {
+  background-color: #121212;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.page-link {
+  display: block;
+  padding: 15px 30px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.page-link:hover {
+  background-color: #242424;
+}
+
+.page-link.active::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 4px;
+  background-color: white;
+  height: 100%;
+}

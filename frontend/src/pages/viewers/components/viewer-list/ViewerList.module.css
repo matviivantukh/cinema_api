@@ -1,0 +1,6 @@
+.viewer-list {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 10px;
+}

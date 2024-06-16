@@ -1,0 +1,32 @@
+.movie {
+  width: 200px;
+  position: relative;
+  display: block;
+}
+
+.movie::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.8)
+  );
+}
+
+.movie-poster {
+  width: 200px;
+  height: auto;
+}
+
+.movie-content {
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  color: white;
+  width: 100%;
+}

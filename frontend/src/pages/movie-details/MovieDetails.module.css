@@ -1,0 +1,294 @@
+.details-page {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-item-container {
+  background-image: url("~/src/images/movie_poster_placeholder.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+
+.movie-item-container:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.movie-title {
+  text-decoration: none;
+}
+
+.movie-item {
+  position: relative;
+  z-index: 1;
+  padding: 20px 80px;
+  max-width: 100%;
+  color: white;
+  backdrop-filter: blur(15px);
+}
+
+.movie-poster {
+  width: 200px;
+}
+
+.movie-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.movie-info-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.movie-info-list > li {
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 100vh;
+}
+
+.movie-info-list > li:not(:last-child) {
+  margin-right: 13px;
+  position: relative;
+}
+
+.movie-info-list > li:not(:last-child)::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  background-color: currentColor;
+  top: 50%;
+  right: -13px;
+  transform: translate(0, -50%);
+}
+
+.movie-info-article {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.movie-info-article h3 {
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.movie-age-rating {
+  font-size: 18px;
+}
+
+.movie-description {
+  overflow: hidden;
+}
+
+.short-description {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.movie-date-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.movie-date-details > li:not(:last-child) {
+  margin-right: 11px;
+  position: relative;
+}
+
+.movie-date-details > li:not(:last-child)::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  background-color: currentColor;
+  top: 50%;
+  right: -11px;
+  transform: translate(0, -50%);
+}
+
+.movie-content-heading h2 {
+  color: white;
+  font-size: 32px;
+}
+
+.movie-content-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-content-heading-left {
+  font-size: 14px;
+  color: rgb(216, 216, 216);
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+
+.movie-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.movie-rating-heading {
+  font-size: 14px;
+  color: rgb(216, 216, 216);
+  font-weight: bold;
+}
+
+.movie-rating-content {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.denominator {
+  font-size: 14px;
+  color: rgb(216, 216, 216);
+  font-weight: lighter;
+}
+
+.movie-bottom-content {
+  padding: 20px 80px;
+  color: black;
+  background-color: white;
+  display: grid;
+  flex-grow: 1;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.movie-article-header {
+  padding-left: 10px;
+  border-left: 3px solid orange;
+}
+
+.movie-actors-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  column-gap: 10px;
+  row-gap: 20px;
+  max-height: 400px;
+  overflow: auto;
+}
+
+.movie-actors-list > li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.actor-avatar {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.movie-studios-list {
+  display: flex;
+  padding: 10px;
+  max-height: 400px;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.movie-studios-list > li {
+  padding-block: 10px;
+}
+
+.movie-studios-list > li:not(:first-of-type) {
+  border-top: gray 1px solid;
+}
+
+.movie-poster-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.movie-license-contract {
+  padding: 20px 40px;
+  border-radius: 15px;
+  background-color: rgba(143, 143, 143, 0.5);
+  backdrop-filter: blur(15px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.contract-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.contract-section h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.contract-section span {
+  font-size: 14px;
+  color: rgb(216, 216, 216);
+}
+
+.delete-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.settings-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.settings-dropdown:focus > .settings-dropdown-content {
+  display: block;
+}
+
+.settings-dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  background-color: #12121280;
+}
+
+.settings-dropdown-content li {
+  padding: 10px 20px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-wrap: nowrap;
+}
+
+.movie-content-heading-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}

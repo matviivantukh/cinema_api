@@ -1,0 +1,12 @@
+.root-layout {
+  max-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+.main-content {
+  max-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}

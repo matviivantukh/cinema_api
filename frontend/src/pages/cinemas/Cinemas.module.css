@@ -1,0 +1,9 @@
+.cinema-page {
+  padding: 50px;
+  display: flex;
+  height: 100%;
+  box-sizing: border-box;
+  align-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}

@@ -1,0 +1,27 @@
+.date-selector {
+  color: white;
+  background-color: transparent;
+  border: none;
+  padding: 2px;
+  border-bottom: white solid 1px;
+  font-size: 16px;
+  max-width: fit-content;
+  font-family: sans-serif;
+}
+
+.date-selector:focus {
+  outline: none;
+}
+
+.date-selector::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.cinema-page {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+  height: 100%;
+  margin: 0 auto;
+}
