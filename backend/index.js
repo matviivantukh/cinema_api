@@ -20,6 +20,8 @@ const screeningFormatRouter = require("./src/modules/screening-formats/screening
 const sessionRouter = require("./src/modules/session/session.router");
 const orderRouter = require("./src/modules/orders/order.router");
 const paymentTypeRouter = require("./src/modules/payment-types/payment-type.router");
+const metadataRouter = require("./src/modules/metadata/metadata.router");
+const analyticRouter = require("./src/modules/analytics/analytic.router");
 
 const app = express();
 
@@ -60,6 +62,10 @@ app.use("/sessions", sessionRouter);
 app.use("/orders", orderRouter);
 
 app.use("/payment-types", paymentTypeRouter);
+
+app.use("/metadata", metadataRouter);
+
+app.use("/analytics", analyticRouter);
 
 app.listen(process.env.PORT, () => {
   console.log("server started");
