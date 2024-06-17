@@ -1,0 +1,79 @@
+.metadata-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.metadata-container {
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.data-load-history-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.data-load-history-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.data-load-history-controls button {
+  padding: 10px 20px;
+  color: white;
+  background-color: orange;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.data-load-history-controls button:disabled {
+  background-color: rgb(118, 118, 118);
+}
+
+.tables-metadata {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  color: white;
+}
+
+.oltp-metadata,
+.olap-metadata {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.data-load-history {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 0;
+}
+
+.data-load-history table {
+  border: none;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.data-load-history th,
+.data-load-history td {
+  padding: 10px;
+  text-align: center;
+}
+
+.data-load-history tbody tr:nth-child(odd) {
+  background-color: #121212;
+}
+
+.data-load-history thead {
+  background-color: orange;
+}

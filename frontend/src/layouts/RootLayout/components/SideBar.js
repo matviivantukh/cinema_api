@@ -38,6 +38,26 @@ const SideBar = () => {
             >
               Cinemas
             </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? `${classes["page-link"]} ${classes["active"]}`
+                  : classes["page-link"]
+              }
+              to={"/metadata"}
+            >
+              Metadata
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? `${classes["page-link"]} ${classes["active"]}`
+                  : classes["page-link"]
+              }
+              to={"/analytics"}
+            >
+              Analytics
+            </NavLink>
           </li>
         </ul>
       </nav>

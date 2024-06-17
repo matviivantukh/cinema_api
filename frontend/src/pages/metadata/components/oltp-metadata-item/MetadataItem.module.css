@@ -1,0 +1,31 @@
+.metadata-item {
+  color: white;
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.metadata-item-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows 0.5s, padding 0.5s, opacity 0.3s;
+}
+
+.metadata-item:focus .metadata-item-content {
+  grid-template-rows: 1fr;
+  padding: 20px;
+  opacity: 1;
+}
+
+.column-list {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.column-list-item {
+  display: flex;
+  justify-content: space-between;
+}

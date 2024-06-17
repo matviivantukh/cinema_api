@@ -1,0 +1,57 @@
+.analytics-form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-content: center;
+  gap: 20px;
+  height: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #121212;
+  max-width: 250px;
+}
+
+.select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.analytics-page {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+  gap: 30px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.analytics-table {
+  border: none;
+  border-spacing: 0;
+  width: 100%;
+  color: white;
+  align-self: flex-start;
+}
+
+.analytics-table th,
+.analytics-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.analytics-table tbody tr:nth-child(odd) {
+  background-color: #121212;
+}
+
+.analytics-table thead {
+  background-color: orange;
+}

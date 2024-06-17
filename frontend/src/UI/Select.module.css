@@ -52,4 +52,12 @@
   color: white;
   cursor: pointer;
   font-size: 16px;
+  overflow: hidden; /* Ensures that the overflow is hidden */
+  text-overflow: ellipsis;
+}
+
+.one-selected-value {
+  display: block;
+  overflow: hidden; /* Ensures that the overflow is hidden */
+  text-overflow: ellipsis;
 }

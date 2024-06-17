@@ -31,7 +31,9 @@ const Select = ({
             : label}
         </label>
       ) : (
-        <label className>{selectedValue ?? label}</label>
+        <label className={classes["one-selected-value"]}>
+          {selectedValue ?? label}
+        </label>
       )}
       <div className={classes["select-dropdown"]}>
         <ul className={classes["select-dropdown-list"]}>

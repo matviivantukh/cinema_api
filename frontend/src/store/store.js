@@ -16,6 +16,8 @@ import { screeningFormatReducer } from "./slices/screening-format";
 import { sessionReducer } from "./slices/sessions";
 import { sessionSeatReducer } from "./slices/session-seat";
 import { paymentTypeReducer } from "./slices/payment-type";
+import { metadataReducer } from "./slices/metadata";
+import { analyticReducer } from "./slices/analytic";
 
 const store = configureStore({
   reducer: {
@@ -35,6 +37,8 @@ const store = configureStore({
     session: sessionReducer,
     sessionSeats: sessionSeatReducer,
     paymentTypes: paymentTypeReducer,
+    metadatas: metadataReducer,
+    analytics: analyticReducer,
   },
 });
 
